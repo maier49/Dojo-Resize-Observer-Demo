@@ -4,6 +4,7 @@ import Card from './widgets/Card';
 import Article from './widgets/Article';
 import SplitPane, { Direction } from '@dojo/widgets/split-pane';
 import * as css from './styles/app.m.css';
+const forkMe = require('./img/forkMe.png');
 
 export class App extends WidgetBase {
 
@@ -27,7 +28,7 @@ export class App extends WidgetBase {
 			}, [
 				v('div', { classes: [ css.pane, css.articlePane ] }, [
 					v('a', { classes: css.ribbon, target: '_blank', href: 'https://github.com/tomdye/Dojo-Resize-Observer-Demo' }, [
-						v('img', { src: 'https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png', alt: 'Fork me on GitHub'})
+						v('img', { src: forkMe, alt: 'Fork me on GitHub'})
 					 ]),
 					w(Article, {})
 				]),
