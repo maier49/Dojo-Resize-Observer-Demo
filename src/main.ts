@@ -1,6 +1,12 @@
 
 import { ProjectorMixin } from '@dojo/widget-core/mixins/Projector';
+import ResizeObserver from 'resize-observer-polyfill';
+import global from '@dojo/shim/global';
 import App from './App';
+
+if (!global.ResizeObserver) {
+	global.ResizeObserver = ResizeObserver;
+}
 
 // Create a projector to convert the virtual DOM produced by the application into the rendered page.
 // For more information on starting up a Dojo 2 application, take a look at

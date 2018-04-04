@@ -26,6 +26,9 @@ export class App extends WidgetBase {
 				}
 			}, [
 				v('div', { classes: [ css.pane, css.articlePane ] }, [
+					v('a', { classes: css.ribbon, target: '_blank', href: 'https://github.com/tomdye/Dojo-Resize-Observer-Demo' }, [
+						v('img', { src: 'https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png', alt: 'Fork me on GitHub'})
+					 ]),
 					w(Article, {})
 				]),
 				v('div', { classes: [ css.pane, css.cardPane ] }, [
