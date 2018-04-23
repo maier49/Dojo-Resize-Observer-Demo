@@ -1,4 +1,3 @@
-
 import { ProjectorMixin } from '@dojo/widget-core/mixins/Projector';
 import ResizeObserver from 'resize-observer-polyfill';
 import global from '@dojo/shim/global';
